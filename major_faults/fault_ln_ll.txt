@@ -1,0 +1,244 @@
+Identification Information: 
+  Citation: 
+    Citation Information: 
+      Originator: Alberta Energy and Utilities Board
+      Originator: Alberta Geological Survey
+      Originator: Hamilton, W.N.
+      Originator: Langenberg, C.W.
+      Originator: Price, M.
+      Originator: Chao, D.K.
+      Publication Date: 1999
+      Title: Major Bedrock Faults of Alberta (GIS data, line features)
+      Geospatial Data Presentation Form: vector digital data
+      Series Information: 
+        Series Name: Digital Data
+        Issue Identification: DIG 2012-0016
+      Publication Information: 
+        Publication Place: Edmonton, Alberta, Canada
+        Publisher: Alberta Geological Survey
+      Online Linkage: http://www.ags.gov.ab.ca/publications/DIG/ZIP/DIG_2012_0016.zip
+  Description: 
+    Abstract: This dataset comprises the major geological faults in Alberta bedrock as shown on Alberta Geological Survey Map 236.
+    Purpose: For depicting the major geological faults of Alberta in a geographic information system at approximately 1:1 000 000 scale.
+    Supplemental Information: Language: In English;
+  Time Period of Content: 
+    Time Period Information: 
+      Single Date/Time: 
+        Calendar Date: 1999
+    Currentness Reference: source publication date
+  Status: 
+    Progress: Complete
+    Maintenance and Update Frequency: None planned
+  Spatial Domain: 
+    Bounding Coordinates: 
+      West Bounding Coordinate: -119.994186
+      East Bounding Coordinate: -110.303528
+      North Bounding Coordinate: 60.000719
+      South Bounding Coordinate: 48.999948
+  Keywords: 
+    Theme: 
+      Theme Keyword Thesaurus: none
+      Theme Keyword: bedrock
+      Theme Keyword: fault
+      Theme Keyword: geology
+      Theme Keyword: gis data
+      Theme Keyword: structure
+    Place: 
+      Place Keyword Thesaurus: none
+      Place Keyword: 72e
+      Place Keyword: 72l
+      Place Keyword: 72m
+      Place Keyword: 73d
+      Place Keyword: 73e
+      Place Keyword: 73l
+      Place Keyword: 73m
+      Place Keyword: 74d
+      Place Keyword: 74e
+      Place Keyword: 74l
+      Place Keyword: 74m
+      Place Keyword: 82g
+      Place Keyword: 82h
+      Place Keyword: 82i
+      Place Keyword: 82j
+      Place Keyword: 82n
+      Place Keyword: 82o
+      Place Keyword: 82p
+      Place Keyword: 83a
+      Place Keyword: 83b
+      Place Keyword: 83c
+      Place Keyword: 83d
+      Place Keyword: 83e
+      Place Keyword: 83f
+      Place Keyword: 83g
+      Place Keyword: 83h
+      Place Keyword: 83i
+      Place Keyword: 83j
+      Place Keyword: 83k
+      Place Keyword: 83l
+      Place Keyword: 83m
+      Place Keyword: 83n
+      Place Keyword: 83o
+      Place Keyword: 83p
+      Place Keyword: 84a
+      Place Keyword: 84b
+      Place Keyword: 84c
+      Place Keyword: 84d
+      Place Keyword: 84e
+      Place Keyword: 84f
+      Place Keyword: 84g
+      Place Keyword: 84h
+      Place Keyword: 84i
+      Place Keyword: 84j
+      Place Keyword: 84k
+      Place Keyword: 84l
+      Place Keyword: 84m
+      Place Keyword: 84n
+      Place Keyword: 84o
+      Place Keyword: 84p
+      Place Keyword: alberta
+      Place Keyword: canada
+  Access Constraints: Public
+  Use Constraints: Acknowledgement of the Alberta Energy Regulator/Alberta Geological Survey as the originator/source of this information is required as described in the Open Government License - Alberta.
+  Point of Contact: 
+    Contact Information: 
+      Contact Organization Primary: 
+        Contact Organization: Alberta Geological Survey
+        Contact Person: Publications and Marketing Advisor
+      Contact Position: Publications and Marketing Advisor
+      Contact Address: 
+        Address Type: mailing and physical
+        Address: Alberta Energy Regulator
+        Address: 4th Floor, Twin Atria Building
+        Address: 4999-98 Avenue NW
+        City: Edmonton
+        State or Province: Alberta
+        Postal Code: T6B 2X3
+        Country: Canada
+      Contact Voice Telephone: (780) 422-1927
+      Contact Facsimile Telephone: (780) 422-1918
+      Contact Electronic Mail Address: AGS-Info@aer.ca
+      Hours of Service: 8:00 a.m. to 12:00 p.m. and 1:00 p.m. to 4:30 p.m.
+  Data Set Credit: M.C. Price, D.K. Chao.
+  Native Data Set Environment: Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 2; ESRI ArcCatalog 9.0.0.535
+  Cross Reference: 
+    Citation Information: 
+      Originator: Alberta Energy and Utilities Board
+      Originator: Alberta Geological Survey
+      Originator: Hamilton, W.N.
+      Originator: Langenberg, C.W.
+      Originator: Price, M.
+      Publication Date: 2004
+      Title: Bedrock Geology of Alberta (GIS data)
+      Edition: v. 2.2
+      Geospatial Data Presentation Form: vector digital data
+      Series Information: 
+        Series Name: Digital Data
+        Issue Identification: DIG 2004-0033
+      Publication Information: 
+        Publication Place: Calgary, Alberta, Canada
+        Publisher: Alberta Energy and Utilities Board
+      Online Linkage: http://www.ags.gov.ab.ca/publications
+  Cross Reference: 
+    Citation Information: 
+      Originator: Alberta Energy and Utilities Board
+      Originator: Alberta Geological Survey
+      Originator: Hamilton, W.N.
+      Originator: Langenberg, C.W.
+      Originator: Price, M.C.
+      Originator: Chao, D.K.
+      Publication Date: 1998
+      Title: Geological Map of Alberta
+      Geospatial Data Presentation Form: map
+      Series Information: 
+        Series Name: Map
+        Issue Identification: MAP 236
+      Publication Information: 
+        Publication Place: Edmonton, Alberta
+        Publisher: Alberta Geological Survey, Alberta Energy and Utilities Board
+      Other Citation Details: Scale 1:1000000.
+      Online Linkage: http://www.ags.gov.ab.ca/publications
+Data Quality Information: 
+  Logical Consistency Report: Arcs are not directional, that is, the 'right-hand rule' is not followed for these data.
+  Completeness Report: The authoring geologists located and digitized the major bedrock faults at their discretion. The faults may not represent a complete picture of the major faults in Alberta. Generally, we only digitized the major faults that intersect the bedrock subcrop.
+  Lineage: 
+    Process Step: 
+      Process Description: Faults were digitized in ArcInfo as part of the compilation of Alberta Geological Survey Map 236.
+      Process Date: 1999
+Spatial Data Organization Information: 
+  Direct Spatial Reference Method: Vector
+  Point and Vector Object Information: 
+    SDTS Terms Description: 
+      SDTS Point and Vector Object Type: String
+      Point and Vector Object Count: 82
+Spatial Reference Information: 
+  Horizontal Coordinate System Definition: 
+    Geographic: 
+      Geographic Coordinate Units: Decimal degrees
+      Latitude Resolution: 0.000000
+      Longitude Resolution: 0.000000
+    Geodetic Model: 
+      Horizontal Datum Name: North American Datum of 1983
+      Ellipsoid Name: Geodetic_Reference_System_of_1980
+      Semi-Major Axis: 6378137.000000
+      Denominator of Flattening Ratio: 298.257222
+Entity and Attribute Information: 
+  Detailed Description: 
+    Entity Type: 
+      Entity Type Label: fault_ln_ll.dbf
+      Entity Type Definition: Line feature attributes
+      Entity Type Definition Source: Alberta Geological Survey
+    Attribute: 
+      Attribute Label: TYPE
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Definition: Type of fault: thrust or transverse fault, or shear zone
+    Attribute: 
+      Attribute Label: NAME
+      Attribute Definition Source: Alberta Geological Survey
+      Attribute Definition: Mapped name, if applicable
+Distribution Information: 
+  Distributor: 
+    Contact Information: 
+      Contact Organization Primary: 
+        Contact Organization: Alberta Geological Survey
+        Contact Person: Publications and Marketing Advisor
+      Contact Position: Publications and Marketing Advisor
+      Contact Address: 
+        Address Type: mailing and physical
+        Address: Alberta Energy Regulator
+        Address: 4th Floor, Twin Atria Building
+        Address: 4999-98 Avenue NW
+        City: Edmonton
+        State or Province: Alberta
+        Postal Code: T6B 2X3
+        Country: Canada
+      Contact Voice Telephone: (780) 422-1927
+      Contact Facsimile Telephone: (780) 422-1918
+      Contact Electronic Mail Address: AGS-Info@aer.ca
+      Hours of Service: 8:00 a.m. to 12:00 p.m. and 1:00 p.m. to 4:30 p.m.
+  Distribution Liability: The Alberta Energy Regulator/Alberta Geological Survey (AER/AGS) licenses this information under the Open Government License - Alberta. Any references to proprietary software in our documentation, and/or any use of proprietary data formats in our releases, do not constitute endorsement by the AER/AGS of any manufacturer's product.
+Metadata Reference Information: 
+  Metadata Date: 20131107
+  Metadata Contact: 
+    Contact Information: 
+      Contact Organization Primary: 
+        Contact Organization: Alberta Geological Survey
+        Contact Person: Publications and Marketing Advisor
+      Contact Position: Publications and Marketing Advisor
+      Contact Address: 
+        Address Type: mailing and physical
+        Address: Alberta Energy Regulator
+        Address: 4th Floor, Twin Atria Building
+        Address: 4999-98 Avenue NW
+        City: Edmonton
+        State or Province: Alberta
+        Postal Code: T6B 2X3
+        Country: Canada
+      Contact Voice Telephone: (780) 422-1927
+      Contact Facsimile Telephone: (780) 422-1918
+      Contact Electronic Mail Address: AGS-Info@aer.ca
+      Hours of Service: 8:00 a.m. to 12:00 p.m. and 1:00 p.m. to 4:30 p.m.
+  Metadata Standard Name: FGDC Content Standard for Digital Geospatial Metadata
+  Metadata Standard Version: FGDC-STD-001-1998
+  Metadata Time Convention: local time
+  Metadata Access Constraints: none
+  Metadata Use Constraints: none

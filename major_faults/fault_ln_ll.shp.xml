@@ -1,0 +1,303 @@
+<?xml version="1.0"?>
+<metadata>
+<idinfo>
+  <citation>
+    <citeinfo>
+      <origin>Alberta Energy and Utilities Board</origin>
+      <origin>Alberta Geological Survey</origin>
+      <origin>Hamilton, W.N.</origin>
+      <origin>Langenberg, C.W.</origin>
+      <origin>Price, M.</origin>
+      <origin>Chao, D.K.</origin>
+      <pubdate>1999</pubdate>
+      <title>Major Bedrock Faults of Alberta (GIS data, line features)</title>
+      <geoform>vector digital data</geoform>
+      <serinfo>
+        <sername>Digital Data</sername>
+        <issue>DIG 2012-0016</issue>
+      </serinfo>
+      <pubinfo>
+        <pubplace>Edmonton, Alberta, Canada</pubplace>
+        <publish>Alberta Geological Survey</publish>
+      </pubinfo>
+      <onlink>http://www.ags.gov.ab.ca/publications/DIG/ZIP/DIG_2012_0016.zip</onlink>
+    </citeinfo>
+  </citation>
+  <descript>
+    <abstract>This dataset comprises the major geological faults in Alberta bedrock as shown on Alberta Geological Survey Map 236.</abstract>
+    <purpose>For depicting the major geological faults of Alberta in a geographic information system at approximately 1:1 000 000 scale.</purpose>
+    <supplinf>Language: In English;</supplinf>
+  </descript>
+  <timeperd>
+    <timeinfo>
+      <sngdate>
+        <caldate>1999</caldate>
+      </sngdate>
+    </timeinfo>
+    <current>source publication date</current>
+  </timeperd>
+  <status>
+    <progress>Complete</progress>
+    <update>None planned</update>
+  </status>
+  <spdom>
+    <bounding>
+      <westbc>-119.994186</westbc>
+      <eastbc>-110.303528</eastbc>
+      <northbc>60.000719</northbc>
+      <southbc>48.999948</southbc>
+    </bounding>
+  </spdom>
+  <keywords>
+    <theme>
+      <themekt>none</themekt>
+      <themekey>bedrock</themekey>
+      <themekey>fault</themekey>
+      <themekey>geology</themekey>
+      <themekey>gis data</themekey>
+      <themekey>structure</themekey>
+    </theme>
+    <theme>
+      <themekt>ISO 19115 Topic Category</themekt>
+      <themekey>geoscientificInformation</themekey>
+    </theme>
+    <place>
+      <placekt>none</placekt>
+      <placekey>72e</placekey>
+      <placekey>72l</placekey>
+      <placekey>72m</placekey>
+      <placekey>73d</placekey>
+      <placekey>73e</placekey>
+      <placekey>73l</placekey>
+      <placekey>73m</placekey>
+      <placekey>74d</placekey>
+      <placekey>74e</placekey>
+      <placekey>74l</placekey>
+      <placekey>74m</placekey>
+      <placekey>82g</placekey>
+      <placekey>82h</placekey>
+      <placekey>82i</placekey>
+      <placekey>82j</placekey>
+      <placekey>82n</placekey>
+      <placekey>82o</placekey>
+      <placekey>82p</placekey>
+      <placekey>83a</placekey>
+      <placekey>83b</placekey>
+      <placekey>83c</placekey>
+      <placekey>83d</placekey>
+      <placekey>83e</placekey>
+      <placekey>83f</placekey>
+      <placekey>83g</placekey>
+      <placekey>83h</placekey>
+      <placekey>83i</placekey>
+      <placekey>83j</placekey>
+      <placekey>83k</placekey>
+      <placekey>83l</placekey>
+      <placekey>83m</placekey>
+      <placekey>83n</placekey>
+      <placekey>83o</placekey>
+      <placekey>83p</placekey>
+      <placekey>84a</placekey>
+      <placekey>84b</placekey>
+      <placekey>84c</placekey>
+      <placekey>84d</placekey>
+      <placekey>84e</placekey>
+      <placekey>84f</placekey>
+      <placekey>84g</placekey>
+      <placekey>84h</placekey>
+      <placekey>84i</placekey>
+      <placekey>84j</placekey>
+      <placekey>84k</placekey>
+      <placekey>84l</placekey>
+      <placekey>84m</placekey>
+      <placekey>84n</placekey>
+      <placekey>84o</placekey>
+      <placekey>84p</placekey>
+      <placekey>alberta</placekey>
+      <placekey>canada</placekey>
+    </place>
+  </keywords>
+  <accconst>Public</accconst>
+  <useconst>Acknowledgement of the Alberta Energy Regulator/Alberta Geological Survey as the originator/source of this information is required as described in the Open Government License - Alberta.</useconst>
+  <ptcontac>
+    <cntinfo>
+      <cntorgp>
+        <cntorg>Alberta Geological Survey</cntorg>
+        <cntper>Publications and Marketing Advisor</cntper>
+      </cntorgp>
+      <cntpos>Publications and Marketing Advisor</cntpos>
+      <cntaddr>
+        <addrtype>mailing and physical</addrtype>
+        <address>Alberta Energy Regulator</address>
+        <address>4th Floor, Twin Atria Building</address>
+        <address>4999-98 Avenue NW</address>
+        <city>Edmonton</city>
+        <state>Alberta</state>
+        <postal>T6B 2X3</postal>
+        <country>Canada</country>
+      </cntaddr>
+      <cntvoice>(780) 422-1927</cntvoice>
+      <cntfax>(780) 422-1918</cntfax>
+      <cntemail>AGS-Info@aer.ca</cntemail>
+      <hours>8:00 a.m. to 12:00 p.m. and 1:00 p.m. to 4:30 p.m.</hours>
+    </cntinfo>
+  </ptcontac>
+  <datacred>M.C. Price, D.K. Chao.</datacred>
+  <native>Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 2; ESRI ArcCatalog 9.0.0.535</native>
+  <crossref>
+    <citeinfo>
+      <origin>Alberta Energy and Utilities Board</origin>
+      <origin>Alberta Geological Survey</origin>
+      <origin>Hamilton, W.N.</origin>
+      <origin>Langenberg, C.W.</origin>
+      <origin>Price, M.</origin>
+      <pubdate>2004</pubdate>
+      <title>Bedrock Geology of Alberta (GIS data)</title>
+      <edition>v. 2.2</edition>
+      <geoform>vector digital data</geoform>
+      <serinfo>
+        <sername>Digital Data</sername>
+        <issue>DIG 2004-0033</issue>
+      </serinfo>
+      <pubinfo>
+        <pubplace>Calgary, Alberta, Canada</pubplace>
+        <publish>Alberta Energy and Utilities Board</publish>
+      </pubinfo>
+      <onlink>http://www.ags.gov.ab.ca/publications</onlink>
+    </citeinfo>
+  </crossref>
+  <crossref>
+    <citeinfo>
+      <origin>Alberta Energy and Utilities Board</origin>
+      <origin>Alberta Geological Survey</origin>
+      <origin>Hamilton, W.N.</origin>
+      <origin>Langenberg, C.W.</origin>
+      <origin>Price, M.C.</origin>
+      <origin>Chao, D.K.</origin>
+      <pubdate>1998</pubdate>
+      <title>Geological Map of Alberta</title>
+      <geoform>map</geoform>
+      <serinfo>
+        <sername>Map</sername>
+        <issue>MAP 236</issue>
+      </serinfo>
+      <pubinfo>
+        <pubplace>Edmonton, Alberta</pubplace>
+        <publish>Alberta Geological Survey, Alberta Energy and Utilities Board</publish>
+      </pubinfo>
+      <othercit>Scale 1:1000000.</othercit>
+      <onlink>http://www.ags.gov.ab.ca/publications</onlink>
+    </citeinfo>
+  </crossref>
+</idinfo>
+<dataqual>
+  <logic>Arcs are not directional, that is, the &apos;right-hand rule&apos; is not followed for these data.</logic>
+  <complete>The authoring geologists located and digitized the major bedrock faults at their discretion. The faults may not represent a complete picture of the major faults in Alberta. Generally, we only digitized the major faults that intersect the bedrock subcrop.</complete>
+  <lineage>
+    <procstep>
+      <procdesc>Faults were digitized in ArcInfo as part of the compilation of Alberta Geological Survey Map 236.</procdesc>
+      <procdate>1999</procdate>
+    </procstep>
+  </lineage>
+</dataqual>
+<spdoinfo>
+  <direct>Vector</direct>
+  <ptvctinf>
+    <sdtsterm>
+      <sdtstype>String</sdtstype>
+      <ptvctcnt>82</ptvctcnt>
+    </sdtsterm>
+  </ptvctinf>
+</spdoinfo>
+<spref>
+  <horizsys>
+    <geograph>
+      <geogunit>Decimal degrees</geogunit>
+      <latres>0.000000</latres>
+      <longres>0.000000</longres>
+    </geograph>
+    <geodetic>
+      <horizdn>North American Datum of 1983</horizdn>
+      <ellips>Geodetic_Reference_System_of_1980</ellips>
+      <semiaxis>6378137.000000</semiaxis>
+      <denflat>298.257222</denflat>
+    </geodetic>
+  </horizsys>
+</spref>
+<eainfo>
+  <detailed>
+    <enttyp>
+      <enttypl>fault_ln_ll.dbf</enttypl>
+      <enttypd>Line feature attributes</enttypd>
+      <enttypds>Alberta Geological Survey</enttypds>
+    </enttyp>
+    <attr>
+      <attrlabl>TYPE</attrlabl>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdef>Type of fault: thrust or transverse fault, or shear zone</attrdef>
+    </attr>
+    <attr>
+      <attrlabl>NAME</attrlabl>
+      <attrdefs>Alberta Geological Survey</attrdefs>
+      <attrdef>Mapped name, if applicable</attrdef>
+    </attr>
+  </detailed>
+</eainfo>
+<distinfo>
+  <distrib>
+    <cntinfo>
+      <cntorgp>
+        <cntorg>Alberta Geological Survey</cntorg>
+        <cntper>Publications and Marketing Advisor</cntper>
+      </cntorgp>
+      <cntpos>Publications and Marketing Advisor</cntpos>
+      <cntaddr>
+        <addrtype>mailing and physical</addrtype>
+        <address>Alberta Energy Regulator</address>
+        <address>4th Floor, Twin Atria Building</address>
+        <address>4999-98 Avenue NW</address>
+        <city>Edmonton</city>
+        <state>Alberta</state>
+        <postal>T6B 2X3</postal>
+        <country>Canada</country>
+      </cntaddr>
+      <cntvoice>(780) 422-1927</cntvoice>
+      <cntfax>(780) 422-1918</cntfax>
+      <cntemail>AGS-Info@aer.ca</cntemail>
+      <hours>8:00 a.m. to 12:00 p.m. and 1:00 p.m. to 4:30 p.m.</hours>
+    </cntinfo>
+  </distrib>
+  <distliab>The Alberta Energy Regulator/Alberta Geological Survey (AER/AGS) licenses this information under the Open Government License - Alberta. Any references to proprietary software in our documentation, and/or any use of proprietary data formats in our releases, do not constitute endorsement by the AER/AGS of any manufacturer&apos;s product.</distliab>
+</distinfo>
+<metainfo>
+  <metd>20131107</metd>
+  <metc>
+    <cntinfo>
+      <cntorgp>
+        <cntorg>Alberta Geological Survey</cntorg>
+        <cntper>Publications and Marketing Advisor</cntper>
+      </cntorgp>
+      <cntpos>Publications and Marketing Advisor</cntpos>
+      <cntaddr>
+        <addrtype>mailing and physical</addrtype>
+        <address>Alberta Energy Regulator</address>
+        <address>4th Floor, Twin Atria Building</address>
+        <address>4999-98 Avenue NW</address>
+        <city>Edmonton</city>
+        <state>Alberta</state>
+        <postal>T6B 2X3</postal>
+        <country>Canada</country>
+      </cntaddr>
+      <cntvoice>(780) 422-1927</cntvoice>
+      <cntfax>(780) 422-1918</cntfax>
+      <cntemail>AGS-Info@aer.ca</cntemail>
+      <hours>8:00 a.m. to 12:00 p.m. and 1:00 p.m. to 4:30 p.m.</hours>
+    </cntinfo>
+  </metc>
+  <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+  <metstdv>FGDC-STD-001-1998</metstdv>
+  <mettc>local time</mettc>
+  <metac>none</metac>
+  <metuc>none</metuc>
+</metainfo>
+</metadata>

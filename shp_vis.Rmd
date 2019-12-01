@@ -1,0 +1,59 @@
+---
+title: "raster_vis"
+author: "Scott McKean"
+date: "3/7/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(sp)
+library(rgdal)
+library(rgeos)
+library(raster)
+library(mapproj)
+#library(sf)
+```
+
+## Load Shapefile and format
+
+```{r load}
+# load shapefile
+pr_shp <- readOGR(dsn = "./peace_river_faults", layer = "prafaults_ln_ll")
+pr_shp@data$id <- rownames(pr_shp@data)
+pr_shp_df <- fortify(pr_shp, region = "id")
+pr_shp_df_merge <- merge(pr_shp_df, pr_shp@data, by = "id")
+
+ags_line_shp <- readOGR(dsn = "./ags_lineaments", layer = "lineaments_ln_ll")
+ags_line_shp@data$id <- rownames(ags_line_shp@data)
+ags_line_df <- fortify(ags_line_shp, region = "id")
+ags_line_df_merge <- merge(ags_line_df, ags_line_shp@data, by = "id")
+
+fault_shp <- readOGR(dsn = "./major_faults", layer = "fault_ln_ll")
+fault_shp@data$id <- rownames(fault_shp@data)
+fault_shp_df <- fortify(fault_shp, region = "id")
+fault_shp_df_merge <- merge(fault_shp_df, fault_shp@data, by = "id")
+
+can <- getData('GADM', country = 'CAN', level = 1)
+ab <- can[can$NAME_1 == 'Alberta',]
+ab@data$id <- rownames(ab@data)
+ab_df <- fortify(ab, region = "id")
+ab_df <- merge(ab_df, ab@data, by = "id")
+
+```
+
+## Plot shapefile
+
+```{r plot}
+ggplot() +
+  geom_path(data = ags_line_df, aes(x=long, y=lat, group = group, colour = 'Lineaments')) +
+  geom_path(data = pr_shp_df, aes(x=long, y=lat, group = group, colour = 'Peace River')) +
+  geom_path(data = fault_shp, aes(x=long, y=lat, group = group, colour = 'Major Faults')) +
+  geom_path(data = ab_df, aes(x=long, y=lat), size = 1.5) +
+  scale_colour_manual(name = 'Dataset', values = c(1,2,3)) +
+  xlim(-121,-109) +
+  ylim(48,61) +
+  ggtitle('Alberta Faults and Lineaments Data') +
+  coord_map() +
+  ggsave('ab_lin_map.png',width = 6, height = 10, dpi = 600)
+```
