@@ -1,0 +1,122 @@
+---
+title: "raster_vis"
+author: "Scott McKean"
+date: "3/7/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(sp)
+library(sf)
+library(rgdal)
+library(rgeos)
+library(raster)
+library(tmap)
+library(mapproj)
+#library(sf)
+```
+
+## Get Duvernay Layer
+
+```{r}
+# set overall duvernay bounds
+duvernay_bounds <- rbind(c(-110, 51), c(-110, 56), c(-120, 56), c(-120, 51), c(-110, 51))
+duvernay_bounds <- st_sfc(st_polygon(list(duvernay_bounds)), crs = 4326) %>%
+  st_transform(crs = 26911)
+duvernay_bounds <- st_sf(duvernay_bounds)
+
+# set study bounds
+study_bounds <- rbind(c(440000, 5950000), c(440000, 6090000),
+                      c(580000, 6090000), c(580000, 5950000), 
+                      c(440000, 5950000))
+study_bounds <- st_sfc(st_polygon(list(study_bounds)), crs = 26911)
+study_bounds <- st_sf(study_bounds)
+
+# create a raster to mask data
+duvernay_raster <- raster(extent(duvernay_bounds), resolution = 500,
+                       crs = st_crs(duvernay_bounds)$proj4string)
+
+crs(duvernay_raster) <- st_crs(duvernay_bounds)$proj4string
+
+# bring in discrete model bounds
+duvernay_layer <- st_read(dsn = '../duvernay_analysis/dv_isopach', layer = 'fg1217_py_ll') %>%
+  st_transform(crs = 26911) %>%
+  st_intersection(duvernay_bounds) %>%
+  janitor::clean_names() %>%
+  st_crop(., duvernay_raster) %>%
+  filter(descr1 == "Bituminous-rich shale")
+
+```
+## Load Shapefile and format
+
+```{r load}
+ags_lineations_sf <- st_read(dsn = "./ags_lineaments", layer = "lineaments_ln_ll") %>%
+  st_transform(crs = 26911) %>%
+  st_intersection(., duvernay_bounds)
+
+major_faults_sf <- st_read(dsn = "./major_faults", layer = "fault_ln_ll")  %>%
+  st_transform(crs = 26911) %>%
+  st_intersection(., duvernay_bounds)
+
+ab_sf <- getData('GADM', country = 'CAN', level = 1) %>%
+  st_as_sf() %>%
+  filter(NAME_1 == 'Alberta')
+
+write.csv(ags_lineations_sf %>% st_drop_geometry(), 'ags_lineations.csv')
+
+```
+
+## Plot shapefile
+
+```{r plot}
+ggplot() +
+  geom_sf(data = duvernay_bounds) +
+  geom_sf(data = ags_lineations_sf, colour = 'black') +
+  geom_sf(data = major_faults_sf, colour = 'green') +
+  geom_sf(data = duvernay_layer, colour = 'red', fill = NA) +
+  ggtitle('(a)') +
+  coord_sf(datum = 26911) +
+  theme_minimal() +
+  ggsave('raw_lineament_data.jpeg',width = 6, height = 6, dpi = 320) +
+  ggsave('raw_lineament_data.pdf',width = 6, height = 6)
+```
+
+```{r}
+prifault_selected <- c("aerial photo interpretation", 
+"aeromagnetics", "aeromagnetics (HRAM)", "electromagnetic survey", 
+"facies change", "geological mapping", "geophysical logs", "regional aeromag GSC", 
+"satellite data", "seismic", "stratigraphic cross-sections", "structural contours", 
+"topographic lineaments")
+
+secfault_selected <- c("(none)", "aeromagnetics", "core logging", "facies change", 
+"geophysical logs", "ground magnetic survey", "seismic", 
+"stratigraphic cross-sections", "structural contours", "topographic lineaments")
+
+formation_selected <- c("ARCHEAN", "BANFF FM", "CAMBRIAN", 
+"CARDIUM & VIKING", "DEVONIAN SYSTEM", "ELK POINT GRP", "EOCENE", "LEDUC FM", "LOWER PROTEROZOIC", "MIDDLE DEVONIAN", "NISKU-LEDUC", "PRECAMBRIAN", "PRECAMBRIAN SYSTEM",
+"SWAN HILLS MBR", "UNDEFINED", "UPPER CAMBRIAN", "UPPER PALEOZOIC")
+
+filtered_lineations_sf <- ags_lineations_sf %>% 
+  dplyr::filter(PriFault %in% prifault_selected) %>%
+  dplyr::filter(SecFault %in% secfault_selected) %>%
+  dplyr::filter(FmName %in% formation_selected) %>%
+  sf::st_intersection(., duvernay_layer)
+  
+filtered_major_faults <- major_faults_sf %>%
+  sf::st_intersection(., duvernay_layer)
+
+```
+
+```{r}
+ggplot() +
+  geom_sf(data = duvernay_bounds) +
+  geom_sf(data = filtered_lineations_sf, colour = 'black') +
+  geom_sf(data = filtered_major_faults, colour = 'green') +
+  geom_sf(data = duvernay_layer, colour = 'red', fill = NA) +
+  ggtitle('(b)') +
+  coord_sf(datum = 26911) +
+  theme_minimal() +
+  ggsave('filtered_lineament_data.jpeg',width = 6, height = 6, dpi = 320) +
+  ggsave('filtered_lineament_data.pdf',width = 6, height = 6)
+```
