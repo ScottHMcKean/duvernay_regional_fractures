@@ -1,2 +1,2 @@
-# fracture_regional_analysis
+# Duvernay Regional Fracture Analysis
  Regional analysis of shapefiles from research papers for fault structures
